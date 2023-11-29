@@ -1,22 +1,61 @@
+:root{
+  --main-color:#fff;
+  --background-color: #dadada;
+  --card-color: #fff;
+  --first-color: #5edd3e;
+  --second-color: #8ae175;
+}
+
+.body{
+  background-color: var(--background-color);
+}
+
 .App {
+  background-color: var(--background-color);
   text-align: center;
 }
 
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-wrapper-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .card-box{
-  padding: 2rem;
-  background-color: bisque;
-  border: 1px solid black;
-  width: 200px;
+  padding: 1rem;
+  background-color: var(--card-color);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  width: 100px;
+  height: 80px;
 }
 
 .card-front, .card-back{
-  font-size: 2rem;
+  font-size: 1rem;
   color: rgb(40, 40, 53);
-
 }
 
-.card-form{
-  margin: 2rem;
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.new-card{
+  background-color: var(--first-color);
+}
+
+.new-card-form{
+  display: flex;
+  flex-direction: column;
+  /* margin: 2rem; */
   display: flex;
   gap: 1rem;
 }

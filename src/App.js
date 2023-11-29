@@ -1,14 +1,10 @@
 import './App.css';
-import CardWrapper from './CardWrapper'
-import CardForm from './CardForm'
+import CardWrapper from './components/CardWrapper'
 
 function App() {
   return (
     <div className="App">
-      <div className='card-container-grid'>
-        <CardForm/>
-        <CardWrapper/>
-      </div>
+      <CardWrapper/>
     </div>
   );
 }
